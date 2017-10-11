@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { FaInstagram, FaUser, FaHeartO, FaCompass, FaSearch } from 'react-icons/lib/fa';
 import styled from 'styled-components';
+
+
+
 const Nav = styled.div`
 background-color: white;
 display: flex;
@@ -28,7 +31,14 @@ border-radius: 3px;
 color: #999;
 }
 
-`
+input{
+  border: none;
+  font-weight: 300;
+  background: transparent;
+  text-align: center;
+}`
+
+const IconWrapper = 
 
 class Navbar extends Component{
   render(){
@@ -37,9 +47,11 @@ class Navbar extends Component{
         <p><FaInstagram /> | Instaclone</p>
        <searchContainer> <FaSearch/><input type="text"/></searchContainer>
         <div>
+          <IconWraper>
           <FaCompass />
           <FaHeartO />
           <FaUser />
+          </IconWrapper>
         </div>
       </Nav>
     );
