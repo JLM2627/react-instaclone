@@ -38,20 +38,25 @@ input{
   text-align: center;
 }`
 
-const IconWrapper = 
+const iconWrapper = styled.div`
+  size: 28;
+  viewBox: "0 0 40 40",
+  
+
+`
 
 class Navbar extends Component{
   render(){
     return (
       <Nav>
         <p><FaInstagram /> | Instaclone</p>
-       <searchContainer> <FaSearch/><input type="text"/></searchContainer>
+       <searchContainer> <FaSearch/><input type="text" placeholder="Search"/></searchContainer>
         <div>
-          <IconWraper>
+          <iconWrapper>
           <FaCompass />
           <FaHeartO />
           <FaUser />
-          </IconWrapper>
+          </iconWrapper>
         </div>
       </Nav>
     );
