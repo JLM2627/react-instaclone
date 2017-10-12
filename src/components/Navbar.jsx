@@ -41,9 +41,11 @@ input{
 const iconWrapper = styled.div`
   size: 28;
   viewBox: "0 0 40 40",
+  display: flex;
+  justify-content: space-around;
   
 
-`
+`;
 
 class Navbar extends Component{
   render(){
